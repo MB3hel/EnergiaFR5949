@@ -1,10 +1,12 @@
 # EnergiaFR5949
 Energia pinmap for MSP430FR5949 LFXT chip.
 
-## Installing
+## Manual installing Installing
+- Note: patched versions of energia are available for download on the [Releases page]().
 - Download repo as a zip
 - Install energia
 - Copy the hardware folder and merge with energia's hardware folder (paste into energia directory)
+- append the contents of hardware\energia\msp430\append_to_boards.txt to the end of the boards.txt file in the same folder
 
 ## Pin Numbers:
 - Numbers match the package pin numbers
@@ -13,9 +15,9 @@ Energia pinmap for MSP430FR5949 LFXT chip.
 - UART (Debug, Serial)
     - RXD = P2.1 = 24
     - TXD = P2.0 = 23
-- UART (Alternate, Serial1)
+- UART (Auxiliary, Serial1)
     - RXD = P2.6 = 20
-    - TXD = P2.5 = 19.
+    - TXD = P2.5 = 19
 - SPI (Cannot be used at same time as hardware I2C)
     - SS = P3.4 = 26
     - SCK = P2.2 = 25
@@ -31,8 +33,3 @@ Energia pinmap for MSP430FR5949 LFXT chip.
 ![Pinmap](pins.png)
 
 Credit: Pinout diagram from TI datasheet. 
-
-## Todo
-- Nice pinout diagram
-- Internal temperature sensor (verify that it is same config as on 5969 used on launchpad)
-- Test UART (Serial)
