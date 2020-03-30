@@ -1,9 +1,17 @@
 # EnergiaFR5949
 Energia pinmap for MSP430FR5949 LFXT chip.
 
+- Note: patched versions of energia are available for download on the Releases page.
+
+## Automatic Installation (patching)
+- Download repo as a zip (or clone it)
+- Install energia
+- Install python 3
+- Run the auto_patcher.py script with python3
+- When prompted select the folder where engergia was installed. For macOS choose `Energia.app`.
+
 ## Manual installing Installing
-- Note: patched versions of energia are available for download on the [Releases page]().
-- Download repo as a zip
+- Download repo as a zip (or clone it)
 - Install energia
 - Copy the hardware folder and merge with energia's hardware folder (paste into energia directory)
 - append the contents of hardware\energia\msp430\append_to_boards.txt to the end of the boards.txt file in the same folder
